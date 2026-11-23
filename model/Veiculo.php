@@ -11,7 +11,7 @@ class Veiculo {
         $this->conn = $db;
     }
 
-    public function listar_Publico($busca = '', $filtros = []) {
+    public function listarPublico($busca = '', $filtros = []) {
         $sql = "SELECT id, marca, modelo, `year`, kilometragem, cor, motor, cambio, ar_condicionado, imagem, valor, `status`, visivel FROM " . $this->table . " WHERE visivel = TRUE";
         $params = [];
 
